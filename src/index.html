@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entity Info Fetcher</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Simple Entity Info Fetcher</h1>
+        <p>Use the form below to fetch entity details by ID.</p>
+        
+        <form action="/fetch" method="get">
+            <label for="id">Entity ID:</label>
+            <input type="text" id="id" name="id" required>
+            
+            <button type="submit">Fetch Info</button>
+        </form>
+        
+        <div id="result">
+            <!-- Result will be displayed here -->
+            {% if entity %}
+                <h2>Entity Info</h2>
+                <p><strong>Name:</strong> {{ entity.name }}</p>
+                <p><strong>Email:</strong> {{ entity.email }}</p>
+            {% elif error %}
+                <h2>Error</h2>
+                <p>{{ error }}</p>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>

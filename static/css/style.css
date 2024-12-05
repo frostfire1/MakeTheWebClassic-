@@ -1,0 +1,92 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and general layout */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fc;
+    color: #333;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #0056b3;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: 1rem;
+    color: #555;
+}
+
+input[type="text"],
+input[type="url"] {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+input[type="text"]:focus,
+input[type="url"]:focus {
+    border-color: #0056b3;
+}
+
+button {
+    padding: 12px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #004080;
+}
+
+/* Result Section */
+#result {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#result h2 {
+    color: #333;
+}
+
+#result p {
+    font-size: 1.1rem;
+    color: #555;
+}

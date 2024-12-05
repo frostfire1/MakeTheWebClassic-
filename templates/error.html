@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error - Simple Web Search</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .error-message {
+            color: red;
+            font-size: 1.5em;
+            margin-top: 50px;
+        }
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="error-message">
+    <h1>{{ message }}</h1>
+    <p><a href="/">Go back to the homepage</a></p>
+</div>
+
+<footer>
+    <p>&copy; 2024 MAKE THE WEB LOOK CLASSIC</p>
+</footer>
+
+</body>
+</html>
